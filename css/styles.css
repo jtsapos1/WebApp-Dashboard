@@ -1,3 +1,14 @@
+/* Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    font-size: large;
+}
+
+/* Mobile First Approach */
 .grid-container {
     display: grid;
     grid-template-columns: 100%;
@@ -20,11 +31,35 @@ main {
     grid-area: main;
 }
 
+/* Media Queries for Tablets */
+
 @media (min-width: 768px) {
     .grid-container {
         grid-template-columns: 55px 1fr;
         grid-template-areas:
             "header header"
-            "navigation main";
+            "nav main";
     }
+
+    .traffic,
+    .social {
+        grid-column: 1 / span 2;
+    }
+
+    .daily,
+    .members,
+    .message {
+        grid-column: 1 / span 1;
+    }
+
+    .mobile,
+    .activity,
+    .settings {
+        grid-column: 2 / span 1;
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 50%;
 }
