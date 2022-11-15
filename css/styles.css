@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
-    font-size: large;
+    font-size: 13px;
 }
 
 .bell {
@@ -46,6 +46,11 @@ main {
             "nav main";
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 50%;
+    }
+
     .traffic,
     .social {
         grid-column: 1 / span 2;
@@ -62,9 +67,12 @@ main {
     .settings {
         grid-column: 2 / span 1;
     }
-}
 
-main {
-    display: grid;
-    grid-template-columns: 50%;
+    .widget-container-full {
+        width: 90vw;
+    }
+
+    .widget-container-half {
+        width: 45vw;
+    }
 }
