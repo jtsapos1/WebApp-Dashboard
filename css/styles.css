@@ -8,6 +8,11 @@
     font-size: large;
 }
 
+.bell {
+    margin: 1em auto;
+    width: 5%;
+}
+
 /* Mobile First Approach */
 .grid-container {
     display: grid;
