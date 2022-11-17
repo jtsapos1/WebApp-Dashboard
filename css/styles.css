@@ -21,81 +21,83 @@
 .social-image {
 	margin: 1em auto;
 	width: 7%;
+}
 
-	/* Mobile First Approach */
+/* Mobile First Approach */
+.grid-container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"header"
+		"nav"
+		"main";
+
+}
+
+header {
+	grid-area: header;
+	/* grid-column: 1 / -1; */
+}
+
+nav {
+	grid-area: nav;
+	/* grid-row: 2 / 8; */
+}
+
+main {
+	grid-area: main;
+	/* grid-row: 2 / 8; */
+}
+
+
+/* Media Queries for Tablets */
+
+@media (min-width: 768px) {
 	.grid-container {
-		display: grid;
-		grid-template-columns: 100%;
-		grid-template-rows: auto;
+		grid-template-columns: 55px 1fr;
 		grid-template-areas:
-			"header"
-			"nav"
-			"main";
-
-	}
-
-	header {
-		grid-area: header;
-		/* grid-column: 1 / -1; */
-	}
-
-	nav {
-		grid-area: nav;
-		/* grid-row: 2 / 8; */
+			"header header"
+			"nav main";
 	}
 
 	main {
-		grid-area: main;
-		/* grid-row: 2 / 8; */
+		display: grid;
+		grid-template-columns: 50%;
 	}
 
+	.traffic,
+	.social {
+		grid-column: 1 / span 2;
+	}
 
-	/* Media Queries for Tablets */
+	.daily,
+	.members,
+	.message {
+		grid-column: 1 / span 1;
+	}
 
-	@media (min-width: 768px) {
-		.grid-container {
-			grid-template-columns: 55px 1fr;
-			grid-template-areas:
-				"header header"
-				"nav main";
-		}
+	.mobile,
+	.activity,
+	.settings {
+		grid-column: 2 / span 1;
+	}
 
-		main {
-			display: grid;
-			grid-template-columns: 50%;
-		}
+	.widget-container-full {
+		width: 90vw;
+	}
 
-		.traffic,
-		.social {
-			grid-column: 1 / span 2;
-		}
+	.widget-container-half {
+		width: 45vw;
+	}
 
-		.daily,
-		.members,
-		.message {
-			grid-column: 1 / span 1;
-		}
+	.nav-img {
+		margin: 1em auto;
+		width: 50%;
+	}
 
-		.mobile,
-		.activity,
-		.settings {
-			grid-column: 2 / span 1;
-		}
-
-		.widget-container-full {
-			width: 90vw;
-		}
-
-		.widget-container-half {
-			width: 45vw;
-		}
-
-		.nav-img {
-			margin: 1em auto;
-			width: 50%;
-		}
-
-		.social-image {
-			margin: 1em auto;
-			width: 7%;
-		}
+	.social-image {
+		margin: 1em auto;
+		width: 7%;
+	}
+}
