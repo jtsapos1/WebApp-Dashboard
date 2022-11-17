@@ -26,6 +26,7 @@
 
 header {
     grid-area: header;
+    grid-column: 1 / -1;
 }
 
 nav {
@@ -34,6 +35,8 @@ nav {
 
 main {
     grid-area: main;
+    grid-column-start: 2;
+    grid-column-end: 8;
 }
 
 /* Media Queries for Tablets */
