@@ -22,22 +22,24 @@
         "header"
         "nav"
         "main";
+
 }
 
 header {
     grid-area: header;
-    grid-column: 1 / -1;
+    /* grid-column: 1 / -1; */
 }
 
 nav {
     grid-area: nav;
+    /* grid-row: 2 / 8; */
 }
 
 main {
     grid-area: main;
-    grid-column-start: 2;
-    grid-column-end: 8;
+    /* grid-row: 2 / 8; */
 }
+
 
 /* Media Queries for Tablets */
 
