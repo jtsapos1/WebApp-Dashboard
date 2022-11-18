@@ -37,6 +37,9 @@
 
 header {
 	grid-area: header;
+	height: 70px;
+	display: flex;
+	justify-items: flex-end;
 	/* grid-column: 1 / -1; */
 }
 
@@ -48,6 +51,25 @@ nav {
 main {
 	grid-area: main;
 	/* grid-row: 2 / 8; */
+}
+
+.flex-headr {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	flex: 1;
+}
+
+.flex-headr img {
+	height: 30px;
+	padding-left: 10px;
+	justify-items: center;
+
+}
+
+.flex-headr svg {
+	height: 24px;
+	position:
 }
 
 
