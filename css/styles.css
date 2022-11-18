@@ -55,6 +55,19 @@ nav {
 	/* grid-row: 2 / 8; */
 }
 
+.navbar-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav-img {
+	width: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
 
 main {
 	grid-area: main;
