@@ -43,6 +43,12 @@ header {
 	/* grid-column: 1 / -1; */
 }
 
+.header-right {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
 nav {
 	grid-area: nav;
 	/* grid-row: 2 / 8; */
@@ -56,6 +62,7 @@ main {
 .flex-headr {
 	display: flex;
 	height: 60px;
+	justify-content: space-between;
 	align-items: center;
 	flex: 1;
 }
