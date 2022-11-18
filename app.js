@@ -8,12 +8,13 @@ const send = document.getElementById("send");
 
 
 //create the HTML for the Alert banner
-alertBanner.innerHTML = 
+alertBanner.innerHTML = `
 <div class="alert-banner">
 <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
     to complete</p>
 <p class="alert-banner-close"></p>
 </div>
+`;
 
 //Add a “click” event listener to the alert banner.
 alertBanner.addEventListener('click', (e) => {
