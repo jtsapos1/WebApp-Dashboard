@@ -51,13 +51,44 @@ header {
 
 nav {
 	grid-area: nav;
+	background-color: #6f6fdc;
 	/* grid-row: 2 / 8; */
 }
+
 
 main {
 	grid-area: main;
 	/* grid-row: 2 / 8; */
 }
+
+.main-header {
+	background-color: rgb(247, 247, 247);
+	height: 60px;
+	/* width: 1650px; */
+	border-bottom: 2px solid lightgray;
+}
+
+.headline {
+	float: left;
+	background-color: white;
+	height: 60px;
+	text-align: center;
+	padding: 15px 12px;
+	font-size: 18px;
+	border-right: 2px solid lightgray;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.traffic-nav {
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+.traffic-nav li {
+	display: inline;
+	padding-left: 1em;
+}
+
 
 .flex-headr {
 	display: flex;
@@ -129,5 +160,11 @@ main {
 	.social-image {
 		margin: 1em auto;
 		width: 7%;
+	}
+
+	.main-header {
+		background-color: rgb(247, 247, 247);
+		height: 60px;
+		border-bottom: 2px solid lightgray;
 	}
 }
