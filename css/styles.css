@@ -61,15 +61,20 @@ main {
 }
 
 .flex-headr img {
-	height: 30px;
+	height: 40px;
 	padding-left: 10px;
-	justify-items: center;
+	position: relative;
+	border-radius: 60%;
 
 }
 
 .flex-headr svg {
-	height: 24px;
-	position:
+	height: 30px;
+}
+
+.flex-headr h3 {
+	padding-left: 5px;
+
 }
 
 
