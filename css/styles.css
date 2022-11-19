@@ -147,7 +147,7 @@ main {
 
 .traffic-nav li {
 	display: inline;
-	padding-left: 1em;
+	/* padding-left: 1em; */
 
 }
 
@@ -223,6 +223,10 @@ main {
 	flex-wrap: wrap;
 }
 
+.message {
+	border-bottom: 1px solid #9999e6;
+}
+
 .message h3 {
 	padding-bottom: 7px;
 	padding-left: 9px;
@@ -230,7 +234,8 @@ main {
 }
 
 .settings h3 {
-	padding-bottom: 7px;
+	padding-top: 15px;
+	padding-bottom: 25px;
 	padding-left: 9px;
 }
 
@@ -273,7 +278,7 @@ textarea::placeholder {
 
 .setting-options {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	font-family: 'Merriweather', serif;
 	font-weight: 500;
 	margin-bottom: 40px;
@@ -290,13 +295,15 @@ textarea::placeholder {
 
 #cancel {
 	flex: 1;
-	height: 3em;
+	height: 50px;
+	color: white;
+	background-color: #b5b5bb;
+	margin-right: 15px;
 }
 
-
-
-
-
+#timezone {
+	width: 93%;
+}
 
 /* Media Queries for Tablets */
 
