@@ -194,6 +194,59 @@ main {
 	color: rgb(119, 118, 118);
 }
 
+.members-container {
+	text-align: center;
+	padding: 1em 0;
+	/* border-bottom: 2px solid #9999e6; */
+	font-family: 'Merriweather', serif;
+	font-weight: 200;
+}
+
+.members-container img {
+	height: 70px;
+	border-radius: 50%;
+}
+
+.members-text {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #9999e6;
+}
+
+.widget-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-family: 'Merriweather', serif;
+	font-size: 12px;
+}
+
+.form-area,
+.form-field,
+.button-primary {
+	flex-basis: 100%;
+	margin-bottom: 1em;
+}
+
+.form-field {
+	height: 3em;
+	font-family: 'Merriweather', serif;
+}
+
+.form-area {
+	height: 7em;
+	font-family: 'Merriweather', serif;
+}
+
+.button-primary {
+	height: 50px;
+}
+
+
+
 
 
 
