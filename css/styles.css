@@ -136,6 +136,10 @@ main {
 	height: 2.5em;
 }
 
+.traffic {
+	display: flex;
+}
+
 .traffic-nav {
 	text-align: center;
 	font-family: 'Merriweather', serif;
@@ -149,6 +153,7 @@ main {
 
 .social-container {
 	border: solid 2px #ccc;
+	border-top: 1px solid #9999e6;
 	background: #dfdfdfa4;
 	display: flex;
 	padding: 1em;
@@ -218,6 +223,17 @@ main {
 	flex-wrap: wrap;
 }
 
+.message h3 {
+	padding-bottom: 7px;
+	padding-left: 9px;
+
+}
+
+.settings h3 {
+	padding-bottom: 7px;
+	padding-left: 9px;
+}
+
 input::placeholder,
 textarea::placeholder {
 	font-family: 'Merriweather', serif;
@@ -229,6 +245,8 @@ textarea::placeholder {
 .button-primary {
 	flex-basis: 100%;
 	margin-bottom: 1em;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .form-area,
@@ -249,7 +267,24 @@ textarea::placeholder {
 .button-primary {
 	height: 50px;
 	background-color: #8d8ddb;
-	text-decoration-color: ;
+	color: white;
+	border-radius: 5px;
+}
+
+.setting-options {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Merriweather', serif;
+	font-weight: 500;
+}
+
+.settings-button {
+	display: flex;
+}
+
+#save {
+	flex: 1;
+	height: 3em;
 }
 
 
