@@ -1,13 +1,5 @@
-const alertBanner = document.getElementById("alert");
-const trafficCanvas = document.getElementById("traffic-chart");
-const dailyCanvas = document.getElementById("daily-chart");
-const mobileCanvas = document.getElementById("mobile-chart");
-const user = document.getElementById("userField");
-const message = document.getElementById("messageField");
-const send = document.getElementById("send");
-
-
 //create the HTML for the Alert banner
+const alertBanner = document.getElementById("alert");
 alertBanner.innerHTML = `
 <div class="alert-banner">
 <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
@@ -28,6 +20,7 @@ alertBanner.addEventListener('click', (e) => {
 //trafficCanvas.
 
 //Create an Object literal representing the data for the traffic chart - Labels key and data key
+const trafficCanvas = document.getElementById("traffic-chart");
 let trafficData = {
 	labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
 	"4-10", "11-17", "18-24", "25-31"],
@@ -69,6 +62,7 @@ let trafficChart = new Chart(trafficCanvas, {
 
 
 //Daily Chart (Bar Graph) - data for daily traffic bar chart
+const dailyCanvas = document.getElementById("daily-chart");
 const dailyData = {
 	labels: ["S", "M", "T", "W", "T", "F", "S"],
 	datasets: [{
@@ -100,6 +94,7 @@ let dailyChart = new Chart(dailyCanvas, {
 
 //Mobile Chart (Donut Chart)
 //create an object literal for the data
+const mobileCanvas = document.getElementById("mobile-chart");
 const mobileData = {
 	labels: ["Desktop", "Tablet", "Phones"],
 	datasets: [{
@@ -136,7 +131,12 @@ let mobileChart = new Chart(mobileCanvas, {
 
 //Messaging Section
 //ensure user and message fields are filled out
+const user = document.getElementById("userField");
+const message = document.getElementById("messageField");
+const send = document.getElementById("send");
 
+send.addEventListener('click', () => {
+//ensure user and message fields are filled out
 if (user.value === "" && message.value === "") {
 	alert("Please fill out user and message fields before sending");
 } else if (user.value === "") {
@@ -146,3 +146,4 @@ if (user.value === "" && message.value === "") {
 } else {
 	alert('Message successfully sent to: ${user.value}');
 }
+});
