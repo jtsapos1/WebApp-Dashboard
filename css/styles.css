@@ -231,18 +231,25 @@ textarea::placeholder {
 	margin-bottom: 1em;
 }
 
+.form-area,
+.form-field {
+	background: #e7e7f3;
+}
+
 .form-field {
 	height: 3em;
 	font-family: 'Merriweather', serif;
 }
 
 .form-area {
-	height: 7em;
+	height: 9em;
 	font-family: 'Merriweather', serif;
 }
 
 .button-primary {
 	height: 50px;
+	background-color: #8d8ddb;
+	text-decoration-color: ;
 }
 
 
