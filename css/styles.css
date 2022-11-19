@@ -34,6 +34,8 @@
 		"main";
 }
 
+
+
 header {
 	grid-area: header;
 	height: 70px;
@@ -41,6 +43,27 @@ header {
 	justify-items: center;
 	background-color: #9999e6;
 	/* grid-column: 1 / -1; */
+}
+
+.flex-headr {
+	display: flex;
+	height: 60px;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+
+.flex-headr img {
+	height: 40px;
+	padding-left: 10px;
+	position: relative;
+	border-radius: 60%;
+
+}
+
+.flex-headr h3 {
+	padding-left: 5px;
+
 }
 
 .header-right {
@@ -62,12 +85,11 @@ nav {
 }
 
 .nav-img {
-	width: 15px;
+	width: 25px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 
 }
-
 
 main {
 	grid-area: main;
@@ -92,6 +114,24 @@ main {
 	font-family: 'Merriweather', sans-serif;
 }
 
+.alert {
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	font-family: 'Merriweather', sans-serif;
+
+}
+
+.alert-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5em;
+	background-color: #9999e6;
+	color: white;
+	border-radius: 5px;
+	height: 2.5em;
+}
+
 .traffic-nav {
 	text-align: center;
 	font-family: 'Merriweather', serif;
@@ -103,26 +143,54 @@ main {
 
 }
 
-.flex-headr {
+.social-container {
+	border: solid 2px #ccc;
+	background: #dfdfdfa4;
 	display: flex;
-	height: 60px;
-	justify-content: space-between;
+	padding: 1em;
+	margin-bottom: 1em;
 	align-items: center;
-	flex: 1;
+	border-radius: 5px;
 }
 
-.flex-headr img {
-	height: 40px;
-	padding-left: 10px;
-	position: relative;
-	border-radius: 60%;
-
+.social-stats {
+	margin-bottom: 1em;
 }
 
-.flex-headr h3 {
-	padding-left: 5px;
-
+.social-text {
+	margin-left: 1em;
 }
+
+.social-image {
+	height: 75px;
+	width: 75px;
+	background: #9999e6;
+	fill: white;
+	border-radius: 50%;
+	display: flex;
+	margin: 0;
+}
+
+.social-image svg {
+	height: 45px;
+	margin: auto;
+}
+
+.social-name {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+	font-size: 100px;
+	color: #9999e6;
+}
+
+.social-number {
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+	font-size: 30px;
+	color: rgb(119, 118, 118);
+}
+
+
 
 
 /* Media Queries for Tablets */
