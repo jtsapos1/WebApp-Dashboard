@@ -1,0 +1,50 @@
+.input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #ccc;
+    transition: background .3s;
+    outline: none;
+    cursor: pointer;
+}
+
+input::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(255, 255, 255);
+    transition: left .3s;
+}
+
+.onoffswitch::after {
+    content: "OFF";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: rgb(255, 255, 255);
+    transition: left .3s;
+}
+
+.onoffswitch:checked {
+    background-color: #8d8ddb;
+}
+
+.onoffswitch:checked::before {
+    left: 65%;
+}
+.onoffswitch:checked::after {
+    content: "ON";
+    left: 5%;
+}
+
