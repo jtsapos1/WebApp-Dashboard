@@ -8,9 +8,6 @@
 	font-family: 'Merriweather', serif;
 	font-size: 13px;
 }
-/* canvas {
-	max-width: 100%;
-} */
 
 .bell {
 	margin: 1em auto;
@@ -36,10 +33,7 @@
 		"header"
 		"nav"
 		"main";
-	align: center	
 }
-
-
 
 header {
 	grid-area: header;
@@ -284,7 +278,7 @@ textarea::placeholder {
 
 .setting-options {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	font-family: 'Merriweather', serif;
 	font-weight: 500;
 	margin-bottom: 40px;
@@ -305,10 +299,11 @@ textarea::placeholder {
 	color: white;
 	background-color: #b5b5bb;
 	margin-right: 15px;
+	border-radius: 5px;
 }
 
 #timezone {
-	width: 93%;
+	width: 94vw;
 }
 
 /* Media Queries for Tablets */
