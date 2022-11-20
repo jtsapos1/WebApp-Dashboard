@@ -1,4 +1,4 @@
-.input {
+input {
     -webkit-appearance: none;
     position: relative;
     width: 100px;
@@ -9,8 +9,8 @@
     outline: none;
     cursor: pointer;
 }
-
-input::before {
+/* sets up the circle in the toggle switch */
+input::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -23,28 +23,19 @@ input::before {
     transition: left .3s;
 }
 
-.onoffswitch::after {
-    content: "OFF";
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
+input::before {
+    content: "On";
     background-color: rgb(255, 255, 255);
-    transition: left .3s;
+    float:left;
+    
+
 }
 
-.onoffswitch:checked {
+input:checked {
     background-color: #8d8ddb;
+
 }
 
-.onoffswitch:checked::before {
-    left: 65%;
+input:checked::after {
+    left: 80%;
 }
-.onoffswitch:checked::after {
-    content: "ON";
-    left: 5%;
-}
-
