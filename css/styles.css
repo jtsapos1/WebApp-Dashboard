@@ -373,7 +373,6 @@ textarea::placeholder {
 	.navbar-container a {
 		padding-left: 13px;
 	}
-
 	.traffic,
 	.social,
 	.members,
@@ -383,10 +382,25 @@ textarea::placeholder {
 		grid-column: 1 / span 2;
 	}
 
-	/* .members,
-	.recent-activity {
+	.members-text {
 		display: flex;
 		justify-content: left;
+		padding-left: 13px;
+
+	}
+	.profile-info {
+		padding-left: 15px;
+		padding-top: 13px;
+	}
+	p.profile-name {
+		text-align: left;
+	}
+	p.profile-time {
+		text-align: left;
+	}
+	/* p.profile-date {
+		display: flex;
+		justify-content: space-between;
 	} */
 
 	.widget-container-full {
