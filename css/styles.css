@@ -373,6 +373,7 @@ textarea::placeholder {
 	.navbar-container a {
 		padding-left: 13px;
 	}
+
 	.traffic,
 	.social,
 	.members,
@@ -386,6 +387,7 @@ textarea::placeholder {
 		display: flex;
 		justify-content: left;
 		padding-left: 13px;
+		padding-bottom: 10px;
 
 	}
 	.profile-info {
@@ -398,10 +400,6 @@ textarea::placeholder {
 	p.profile-time {
 		text-align: left;
 	}
-	/* p.profile-date {
-		display: flex;
-		justify-content: space-between;
-	} */
 
 	.widget-container-full {
 		width: 90vw;
