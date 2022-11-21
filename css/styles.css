@@ -347,23 +347,47 @@ textarea::placeholder {
 		display: grid;
 		grid-template-columns: 50%;
 	}
-
-	.traffic,
-	.social {
+	.main-header {
+		background-color: rgb(247, 247, 247);
+		height: 60px;
+		border-bottom: 2px solid lightgray;
 		grid-column: 1 / span 2;
 	}
 
-	.daily,
-	.members,
-	.message {
+	.alert {
+		grid-column: 1 / span 2;
+	}
+
+	.daily {
 		grid-column: 1 / span 1;
 	}
 
-	.mobile,
-	.activity,
-	.settings {
+	.mobile {
 		grid-column: 2 / span 1;
 	}
+
+	.navbar-container {
+		flex-direction: column;
+		
+	}
+	.navbar-container a {
+		padding-left: 13px;
+	}
+
+	.traffic,
+	.social,
+	.members,
+	.message,
+	.recent-activity,
+	.settings   {
+		grid-column: 1 / span 2;
+	}
+
+	/* .members,
+	.recent-activity {
+		display: flex;
+		justify-content: left;
+	} */
 
 	.widget-container-full {
 		width: 90vw;
@@ -383,9 +407,5 @@ textarea::placeholder {
 		width: 7%;
 	}
 
-	.main-header {
-		background-color: rgb(247, 247, 247);
-		height: 60px;
-		border-bottom: 2px solid lightgray;
-	}
+	
 }
