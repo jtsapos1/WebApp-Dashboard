@@ -1,13 +1,15 @@
-input {
+.onoffswitch input {
     -webkit-appearance: none;
     position: relative;
     width: 100px;
     height: 35px;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #ccc;
     transition: background .3s;
     outline: none;
     cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 /* sets up the circle in the toggle switch */
 input::after {
@@ -23,10 +25,8 @@ input::after {
     transition: left .3s;
 }
 
-
 input:checked {
     background-color: #8d8ddb;
-
 }
 
 input:checked::after {
