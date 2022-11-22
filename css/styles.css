@@ -94,7 +94,6 @@ nav {
 	width: 25px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-
 }
 
 main {
@@ -155,24 +154,19 @@ h3#dashboard.headline {
 	text-align: left;
 	font-family: 'Merriweather', serif;
 }
-
 .traffic-nav li {
 	display: inline;
 	padding-left: .7em;
 	margin-left: 3px;
-
 }
 .traffic-nav-link, Hourly {
 	background: olive;
 	border-radius: 30px;
-	
 }
-
 #traffic-chart, #daily-chart, #mobile-chart {
 	border-bottom: 2px solid #9999e6;
 	padding-bottom: 10px;
 	/* margin: 0 auto; */
-
 }
 
 .social-container {
@@ -357,6 +351,11 @@ textarea::placeholder {
 	.alert {
 		grid-column: 1 / span 2;
 	}
+	.traffic-nav {
+		/* dsiplay: flex; */
+		text-align: right;
+		margin-right: 50px;
+	}
 
 	.daily {
 		grid-column: 1 / span 1;
@@ -365,17 +364,28 @@ textarea::placeholder {
 	.mobile {
 		grid-column: 2 / span 1;
 	}
+	.mobile-users {
+		width: 89%;
+	}
 
 	.navbar-container {
 		flex-direction: column;
 		
 	}
+
+	.social-section {
+		display: flex;
+		justify-content: space-around;
+		flex-basis: fit-content;
+		max-width: 100%;
+	}
+
 	.navbar-container a {
 		padding-left: 13px;
 	}
 
 	.traffic,
-	.social,
+	.social-section,
 	.members,
 	.message,
 	.recent-activity,
@@ -408,6 +418,9 @@ textarea::placeholder {
 	.widget-container-half {
 		width: 45vw;
 	}
+	/* .settings {
+		width: 100%;
+	} */
 
 	.nav-img {
 		margin: 1em auto;
