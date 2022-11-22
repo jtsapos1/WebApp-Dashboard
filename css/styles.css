@@ -164,7 +164,7 @@ h3#dashboard.headline {
 	border-radius: 30px;
 }
 #traffic-chart, #daily-chart, #mobile-chart {
-	border-bottom: 2px solid #9999e6;
+	border-bottom: 2px solid lightgray;
 	padding-bottom: 10px;
 	/* margin: 0 auto; */
 }
@@ -354,7 +354,7 @@ textarea::placeholder {
 	.traffic-nav {
 		/* dsiplay: flex; */
 		text-align: right;
-		margin-right: 50px;
+		margin-right: 20px;
 	}
 
 	.daily {
@@ -365,23 +365,29 @@ textarea::placeholder {
 		grid-column: 2 / span 1;
 	}
 	.mobile-users {
-		width: 89%;
+		width: 94%;
 	}
 
 	.navbar-container {
 		flex-direction: column;
-		
+	}
+
+	.navbar-container a {
+		padding-left: 13px;
 	}
 
 	.social-section {
 		display: flex;
 		justify-content: space-around;
-		flex-basis: fit-content;
-		max-width: 100%;
+		flex-basis: 50%;
+		border-bottom: 2px solid lightgray; 
 	}
 
-	.navbar-container a {
-		padding-left: 13px;
+	.social-container {
+		width: 50%;
+	}
+	div.social-image {
+		width: 80px;
 	}
 
 	.traffic,
@@ -398,7 +404,6 @@ textarea::placeholder {
 		justify-content: left;
 		padding-left: 13px;
 		padding-bottom: 10px;
-
 	}
 	.profile-info {
 		padding-left: 15px;
@@ -418,9 +423,6 @@ textarea::placeholder {
 	.widget-container-half {
 		width: 45vw;
 	}
-	/* .settings {
-		width: 100%;
-	} */
 
 	.nav-img {
 		margin: 1em auto;
@@ -430,6 +432,9 @@ textarea::placeholder {
 	.social-image {
 		margin: 1em auto;
 		width: 7%;
+	}
+	#timezone {
+		width: 97%;
 	}
 
 	
