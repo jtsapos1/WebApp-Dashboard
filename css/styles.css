@@ -470,9 +470,16 @@ textarea::placeholder {
 		width: 7%;
 	}
 
-	#timezone {
-		width: 97%;
+	.setting-options {
+		width: 50%;
 	}
 
+	p.settings-label {
+		margin-top: 10px;
+	}
+
+	#timezone {
+		width: 96%;
+	}
 
 }
