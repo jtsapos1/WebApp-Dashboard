@@ -9,6 +9,9 @@
 	font-size: 13px;
 }
 
+.canvas {
+	max-width: 100%;
+}
 
 .bell {
 	margin: 1em auto;
@@ -398,6 +401,10 @@ textarea::placeholder {
 		width: 94%;
 	}
 
+	.mobile-chart {
+		padding-bottom: ;
+	}
+
 	.navbar-container {
 		flex-direction: column;
 	}
@@ -411,12 +418,15 @@ textarea::placeholder {
 		justify-content: space-around;
 		flex-basis: 50%;
 		border-bottom: 2px solid lightgray;
-		margin-left: 3px;
-		margin-right: 3px;
+		/* grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+		justify-content: space-between;
+		gap: 2px; */
+
 	}
 
 	.social-container {
-		width: 50%;
+		flex-grow: 1;
+		/* width: 50%; */
 	}
 
 	div.social-image {
@@ -446,6 +456,11 @@ textarea::placeholder {
 
 	p.profile-name {
 		text-align: left;
+	}
+
+	.profile-date {
+		display: flex;
+		justify-content: right;
 	}
 
 	p.profile-time {
@@ -482,4 +497,40 @@ textarea::placeholder {
 		width: 96%;
 	}
 
+}
+
+@media (min-width: 1024px) {
+
+	.traffic,
+	.social-section {
+		grid-column: 1 / span 2;
+	}
+
+	.daily,
+	.members,
+	.message {
+		grid-column: 1 / span 1;
+	}
+
+	.message {
+		margin-top: 13px;
+	}
+
+	.widget-container {
+		height: 50%
+	}
+
+	.mobile,
+	.recent-activity,
+	.settings {
+		grid-column: 2 / span 1;
+	}
+
+	.settings-options {
+		min-width: 280px;
+	}
+
+	.form-area {
+		height: 14.2em;
+	}
 }
