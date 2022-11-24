@@ -450,8 +450,8 @@ textarea::placeholder {
 	}
 
 	.profile-info {
-		/* display: flex;
-		justify-content: space-between; */
+		display: flex;
+		justify-content: space-between;
 		padding-left: 15px;
 		padding-top: 13px;
 	}
@@ -460,10 +460,10 @@ textarea::placeholder {
 		text-align: left;
 	}
 
-	p.profile-info-date {
-		display: flex;
-		justify-content: right;
-	}
+	/* .profile-info-date {
+		margin-top: 20px;
+		justify-content: space-between;
+	} */
 
 	p.profile-time {
 		text-align: left;
