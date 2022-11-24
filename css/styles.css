@@ -462,6 +462,7 @@ textarea::placeholder {
 
 	p.profile-info-date {
 		display: flex;
+		justify-content: right;
 	}
 
 	p.profile-time {
