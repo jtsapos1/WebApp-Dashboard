@@ -445,28 +445,31 @@ textarea::placeholder {
 	.members-text {
 		display: flex;
 		justify-content: left;
+		align-items: center;
 		padding-left: 13px;
 		padding-bottom: 10px;
 	}
 
 	.profile-info {
-		display: flex;
-		justify-content: space-between;
 		padding-left: 15px;
 		padding-top: 13px;
+		padding-bottom: 13px;
 	}
 
 	p.profile-name {
 		text-align: left;
 	}
 
-	/* .profile-info-date {
-		margin-top: 20px;
-		justify-content: space-between;
-	} */
+	.profile-info-date {
+		margin: auto 0 auto auto;
+	}
 
 	p.profile-time {
 		text-align: left;
+	}
+
+	.caret {
+		margin: auto 0 auto auto;
 	}
 
 	.widget-container-full {
