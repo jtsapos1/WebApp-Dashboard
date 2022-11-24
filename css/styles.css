@@ -511,6 +511,14 @@ textarea::placeholder {
 		grid-column: 1 / span 2;
 	}
 
+	#daily-chart {
+		margin-top: 15px;
+	}
+
+	.mobile-users {
+		border-left: 2px solid lightgrey;
+	}
+
 	.daily,
 	.members,
 	.message {
@@ -529,6 +537,14 @@ textarea::placeholder {
 	.recent-activity,
 	.settings {
 		grid-column: 2 / span 1;
+	}
+
+	.recent-activity {
+		border-left: 2px solid lightgrey;
+	}
+
+	.settings {
+		border-left: 2px solid lightgrey;
 	}
 
 	.settings-options {
