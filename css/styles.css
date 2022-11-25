@@ -399,6 +399,31 @@ textarea::placeholder {
 		width: 94%;
 	}
 
+	#bar-chart {
+		/* display: flex;
+		flex-direction: column; */
+		border-bottom: 1px solid lightgray;
+
+	}
+
+	/* #daily-chart {
+		margin-top: auto;
+		margin-bottom: auto;
+	} */
+
+	.mobile-users {
+		display: flex;
+		flex-basis: auto;
+		align-items: center;
+		border-left: 2px solid lightgrey;
+		border-bottom: 1px solid lightgray;
+	}
+
+
+	.mobile-users-header {
+		margin-bottom: 180px;
+	}
+
 	/* .mobile-chart {
 		padding-bottom: ;
 	} */
@@ -510,12 +535,28 @@ textarea::placeholder {
 	}
 
 	#bar-chart {
+		/* display: flex;
+		flex-direction: column; */
 		border-bottom: 1px solid lightgray;
+
 	}
 
+	/* #daily-chart {
+		margin-top: auto;
+		margin-bottom: auto;
+	} */
+
 	.mobile-users {
+		display: flex;
+		flex-basis: auto;
+		align-items: center;
 		border-left: 2px solid lightgrey;
 		border-bottom: 1px solid lightgray;
+
+	}
+
+	.mobile-users-header {
+		margin-bottom: 220px;
 	}
 
 	.daily,
