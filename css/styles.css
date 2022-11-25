@@ -13,9 +13,32 @@
 	max-width: 100%;
 }
 
+#notifications {
+	height: 40px;
+	width: 40px;
+	display: flex;
+	align-items: center;
+}
+
 .bell {
-	margin: 1em auto;
+	margin: auto;
 	width: 20px;
+	fill: rgb(247, 247, 247);
+	transition: ease-out .5s;
+}
+
+.bell:hover {
+	fill: rgb(60, 50, 205);
+}
+
+.notifications {
+	background: rgb(60, 50, 205);
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	position: relative;
+	bottom: 10px;
+	right: 5px;
 }
 
 .nav-img {
@@ -257,6 +280,11 @@ Hourly {
 	margin-right: 7px;
 }
 
+.caret {
+	visibility: hidden;
+	margin: auto 0 auto auto;
+}
+
 .widget-container {
 	display: flex;
 	flex-wrap: wrap;
@@ -357,6 +385,11 @@ textarea::placeholder {
 		grid-template-areas:
 			"header header"
 			"nav main";
+		width: 100%;
+	}
+
+	.flex-headr {
+		margin-right: 20px;
 	}
 
 	main {
@@ -373,6 +406,10 @@ textarea::placeholder {
 
 	.alert {
 		grid-column: 1 / span 2;
+	}
+
+	.alert-banner {
+		width: 95%;
 	}
 
 	.traffic-nav {
@@ -421,7 +458,7 @@ textarea::placeholder {
 
 
 	.mobile-users-header {
-		margin-bottom: 180px;
+		align-self: flex-start;
 	}
 
 	/* .mobile-chart {
@@ -492,6 +529,7 @@ textarea::placeholder {
 	}
 
 	.caret {
+		visibility: visible;
 		margin: auto 0 auto auto;
 	}
 
@@ -509,7 +547,7 @@ textarea::placeholder {
 	}
 
 	.social-image {
-		margin: 1em auto;
+		margin: auto;
 		width: 7%;
 	}
 
