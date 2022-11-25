@@ -262,7 +262,6 @@ Hourly {
 .members-container {
 	text-align: center;
 	padding: 1em 0;
-	/* border-bottom: 2px solid #9999e6; */
 	font-family: 'Merriweather', serif;
 	font-weight: 200;
 }
@@ -560,28 +559,35 @@ textarea::placeholder {
 	}
 
 	#bar-chart {
-		/* display: flex;
-		flex-direction: column; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		box-sizing: border-box;
 		border-bottom: 1px solid lightgray;
-
 	}
 
-	/* #daily-chart {
-		margin-top: auto;
-		margin-bottom: auto;
-	} */
+	#mobile-chart {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+	}
+
+	.widget-container-half {
+		padding: 15px;
+	}
+
+	h3.mobile-users-header {
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
 
 	.mobile-users {
 		display: flex;
-		flex-basis: auto;
+		flex-direction: column;
+		justify-content: space-around;
+		box-sizing: border-box;
 		align-items: center;
 		border-left: 2px solid lightgrey;
 		border-bottom: 1px solid lightgray;
-
-	}
-
-	.mobile-users-header {
-		margin-bottom: 220px;
 	}
 
 	.daily,
@@ -611,7 +617,10 @@ textarea::placeholder {
 		align-items: center;
 		padding-left: 13px;
 		padding-bottom: 10px;
+	}
 
+	#new-members {
+		margin-top: 7px;
 	}
 
 	.recent-activity {
