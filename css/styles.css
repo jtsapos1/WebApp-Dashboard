@@ -388,10 +388,6 @@ textarea::placeholder {
 		max-width: min-content;
 	}
 
-	.flex-headr {
-		margin-right: 20px;
-	}
-
 	main {
 		display: grid;
 		grid-template-columns: 50%;
@@ -406,10 +402,6 @@ textarea::placeholder {
 
 	.alert {
 		grid-column: 1 / span 2;
-	}
-
-	.alert-banner {
-		width: 95%;
 	}
 
 	.traffic-nav {
