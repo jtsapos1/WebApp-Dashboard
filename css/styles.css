@@ -385,7 +385,7 @@ textarea::placeholder {
 		grid-template-areas:
 			"header header"
 			"nav main";
-		width: 100%;
+		max-width: min-content;
 	}
 
 	.flex-headr {
