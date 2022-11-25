@@ -560,9 +560,8 @@ textarea::placeholder {
 	}
 
 	#timezone {
-		width: 96%;
+		width: 94%;
 	}
-
 }
 
 @media (min-width: 1024px) {
