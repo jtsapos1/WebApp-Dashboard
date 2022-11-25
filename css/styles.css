@@ -47,7 +47,7 @@
 }
 
 .social-image {
-	margin: 1em auto;
+	margin: auto;
 	width: 7%;
 }
 
@@ -424,13 +424,9 @@ textarea::placeholder {
 		grid-column: 2 / span 1;
 	}
 
-	.mobile-users {
-		width: 94%;
-	}
-
 	#bar-chart {
-		/* display: flex;
-		flex-direction: column; */
+		display: flex;
+		flex-direction: column;
 		border-bottom: 1px solid lightgray;
 
 	}
@@ -442,7 +438,7 @@ textarea::placeholder {
 
 	.mobile-users {
 		display: flex;
-		flex-basis: auto;
+		flex-direction: column;
 		align-items: center;
 		border-left: 2px solid lightgrey;
 		border-bottom: 1px solid lightgray;
