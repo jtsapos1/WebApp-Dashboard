@@ -538,6 +538,11 @@ textarea::placeholder {
 		width: 7%;
 	}
 
+	.message h3 {
+		margin-top: 0;
+		margin-left: 1px;
+	}
+
 	.setting-options {
 		width: 50%;
 	}
@@ -547,7 +552,7 @@ textarea::placeholder {
 	}
 
 	#timezone {
-		width: 94%;
+		width: 96%;
 	}
 }
 
@@ -636,32 +641,53 @@ textarea::placeholder {
 		border-left: 2px solid lightgrey;
 	}
 
+	.form-field {
+		margin-top: 6px;
+	}
+
+	#send.button-primary {
+		margin-bottom: 10px;
+	}
+
+	.message h3 {
+		margin-top: 0;
+		margin-left: 6px;
+		margin-bottom: 10px;
+	}
+
+	.form-area {
+		height: 14.2em;
+		margin-top: 4px;
+	}
 
 	.settings {
 		border-left: 2px solid lightgrey;
 		margin-top: 0;
 	}
 
-	.message h3 {
-		margin-top: 4px;
-		margin-left: 6px;
-		margin-bottom: 10px;
-	}
-
 	.settings h3 {
 		margin-top: 0;
 		padding-top: 0;
 		padding-left: 0;
+		padding-bottom: 15px;
 		margin-bottom: 19px;
+	}
+
+	p.settings-label {
+		margin-top: 0;
+		margin-bottom: 25px;
 	}
 
 	.setting-options {
 		min-width: 300px;
-		margin-bottom: 38px;
-
+		margin-bottom: 27px;
 	}
 
-	.form-area {
-		height: 14.2em;
+	#timezone.form-field {
+		margin-top: 34px;
+		width: 95%;
+		height: 45px
 	}
+
+
 }
