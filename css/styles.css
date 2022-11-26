@@ -596,10 +596,6 @@ textarea::placeholder {
 		grid-column: 1 / span 1;
 	}
 
-	.message {
-		margin-top: 13px;
-	}
-
 	.widget-container {
 		height: 50%
 	}
@@ -608,6 +604,10 @@ textarea::placeholder {
 	.recent-activity,
 	.settings {
 		grid-column: 2 / span 1;
+	}
+
+	.members-container {
+		margin-top: 20px;
 	}
 
 	.members-text {
@@ -619,20 +619,46 @@ textarea::placeholder {
 		padding-bottom: 10px;
 	}
 
+	#new-members h3 {
+		margin-top: 13px;
+	}
+
 	#new-members {
-		margin-top: 7px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 	}
 
 	.recent-activity {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
 		border-left: 2px solid lightgrey;
 	}
+
 
 	.settings {
 		border-left: 2px solid lightgrey;
+		margin-top: 0;
 	}
 
-	.settings-options {
-		min-width: 280px;
+	.message h3 {
+		margin-top: 4px;
+		margin-left: 6px;
+		margin-bottom: 10px;
+	}
+
+	.settings h3 {
+		margin-top: 0;
+		padding-top: 0;
+		padding-left: 0;
+		margin-bottom: 19px;
+	}
+
+	.setting-options {
+		min-width: 300px;
+		margin-bottom: 38px;
+
 	}
 
 	.form-area {
