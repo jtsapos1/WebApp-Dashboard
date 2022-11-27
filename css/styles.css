@@ -423,21 +423,24 @@ textarea::placeholder {
 		grid-column: 2 / span 1;
 	}
 
-	#bar-chart {
-		display: flex;
-		flex-direction: column;
+	#bar-chart.daily {
+		/* display: flex;
+		flex-direction: column; */
+		position: relative;
+		align-items: center;
 		border-bottom: 1px solid lightgray;
 
 	}
 
-	/* #daily-chart {
-		margin-top: auto;
-		margin-bottom: auto;
-	} */
+	canvas#daily-chart {
+		height: 120px;
+		width: 100px;
+	}
 
 	.mobile-users {
-		display: flex;
-		flex-direction: column;
+		/* display: flex;
+		flex-direction: column; */
+		position: relative;
 		align-items: center;
 		border-left: 2px solid lightgrey;
 		border-bottom: 1px solid lightgray;
@@ -446,11 +449,12 @@ textarea::placeholder {
 
 	.mobile-users-header {
 		align-self: flex-start;
+		margin-bottom: 13px;
 	}
 
-	/* .mobile-chart {
-		padding-bottom: ;
-	} */
+	canvas#mobile-chart {
+		height: 135px;
+	}
 
 	.navbar-container {
 		flex-direction: column;
@@ -567,13 +571,18 @@ textarea::placeholder {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		text-align: left;
 		box-sizing: border-box;
 		border-bottom: 1px solid lightgray;
 	}
 
-	#mobile-chart {
-		padding-bottom: 10px;
-		margin-bottom: 10px;
+	#bar-chart h3 {
+		margin-top: 5px;
+	}
+
+	canvas#mobile-chart {
+		height: 275px;
+
 	}
 
 	.widget-container-half {
@@ -581,8 +590,8 @@ textarea::placeholder {
 	}
 
 	h3.mobile-users-header {
-		margin-top: 0;
-		margin-bottom: 25px;
+		margin-top: 10px;
+		margin-bottom: 0px;
 	}
 
 	.mobile-users {
