@@ -73,6 +73,7 @@ const dailyData = {
 	}]
 };
 const dailyOptions = {
+	// maintainAspectRatio: false,
 scales: {
 	y: {
 		beginAtZero: true
@@ -111,7 +112,8 @@ const mobileData = {
 
 	//Create an object literal for the options
 const mobileOptions = {
-		aspectRatio: 1.9,
+	  // aspectratio: 1.9,
+		maintainAspectRatio: false,
 		plugins: {
 		legend: {
 		position: 'right',
