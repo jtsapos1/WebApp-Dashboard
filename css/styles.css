@@ -219,18 +219,24 @@ Hourly {
 
 .widget-container-half {
 	width: 270px;
-	border-bottom: 1px solid lightgrey;
+
 	margin: auto;
 	margin: 10px 15px;
+}
 
+#bar-chart.daily {
+	border-bottom: 1px solid lightgrey;
 }
 
 .widget-mobile {
-	position: relative;
-	align-items: center;
-	margin-top: 13px;
+	/* position: relative; */
+	/* align-items: center; */
+	/* margin-top: 13px;
 	margin-bottom: 15px;
-	height: 150px;
+	margin-right: 0; */
+	margin: 0 auto;
+	height: 220px;
+	width: 250px;
 }
 
 .mobile-users {
@@ -465,14 +471,21 @@ textarea::placeholder {
 	}
 
 	.widget-container-half {
-		width: 220px;
-		padding: 15px 30px 15px 10px;
-		margin-right: 20px;
-		border-bottom: 1px solid lightgray;
+		width: 42vw;
+		height: 250px;
+		padding: 30px 15px 0px 10px;
+		margin-top: 15px;
+		margin-bottom: 0;
+		margin-left: 10px;
 	}
 
 	#bar-chart.daily {
-		margin-left: 9px;
+		border-bottom: 1px solid lightgray;
+	}
+
+	.widget-mobile {
+		height: 230px;
+		width: 42vw;
 	}
 
 	/* #bar-chart {
@@ -493,14 +506,12 @@ textarea::placeholder {
 	} */
 
 	/* canvas#daily-chart {
-		height: 120px;
+		height: 150px;
 		width: 80px;
 	} */
 
-	.widget-mobile {
-		position: relative;
-		align-items: center;
-		height: 160px;
+	canvas#mobile-chart {
+		margin: 0 auto;
 	}
 
 	.mobile-users {
@@ -585,10 +596,6 @@ textarea::placeholder {
 		width: 90vw;
 	}
 
-	.widget-container-half {
-		width: 45vw;
-	}
-
 	.nav-img {
 		margin: 1em auto;
 		width: 50%;
@@ -641,19 +648,27 @@ textarea::placeholder {
 		margin-top: 10px;
 	}
 
+	/* .widget-container-half,
+	.widget-mobile {
+		width: 30vw;
+	} */
+
 	.widget-container-half {
-		width: 450px;
+		margin: 0 auto;
+		/* width: 350px;
 		padding: 15px;
-		border-bottom: 1px solid lightgray;
+		border-bottom: 1px solid lightgray; */
 	}
 
 	.widget-mobile {
-		width: 300px;
+		position: relative;
+		width: 275px;
 		height: 240px;
+		margin: 0 auto;
 	}
 
-	h3.mobile-users-header {
-		margin-top: 10px;
+	*/ h3.mobile-users-header {
+		margin-top: 0px;
 		margin-bottom: 0px;
 	}
 
