@@ -487,28 +487,6 @@ textarea::placeholder {
 		width: 42vw;
 	}
 
-	/* #bar-chart {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		width: 180px;
-		position: relative;
-		border-bottom: 1px solid lightgray;
-
-	} */
-	/* #canvas#daily-chart {
-		width: 200px;
-		border-bottom: 1px solid lightgrey;
-		margin: 0 auto;
-		margin-left: 15px;
-
-	} */
-
-	/* canvas#daily-chart {
-		height: 150px;
-		width: 80px;
-	} */
-
 	canvas#mobile-chart {
 		margin: 0 auto;
 	}
